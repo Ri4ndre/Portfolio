@@ -1,0 +1,36 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+export interface Props {
+    title?: string;
+}
+
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en" class="dark:bg-zinc-900 bg-gray-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Riandre van der Voorden's Portfolio">
+    <meta name="generator" content={Astro.generator}>
+    <link rel="icon" href="/src/public/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles/utils.css">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <script src="/src/scripts/dropdown.ts"></script>
+    <title>{title}</title>
+    <ViewTransitions />
+</head>
+
+<body>
+    <slot />
+</body>
+
+</html>
+
+
+
+
+
+ 

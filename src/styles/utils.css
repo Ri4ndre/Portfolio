@@ -1,0 +1,9 @@
+@tailwind utilities;
+@layer utilities {
+  .rotate-270 {
+    transform: rotate(270deg);
+  }
+  .image-scale {
+    transform: scale(1.025);
+  }
+}
