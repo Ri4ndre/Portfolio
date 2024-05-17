@@ -1,9 +1,16 @@
 @tailwind utilities;
+@tailwind base;
 @layer utilities {
+
   .rotate-270 {
     transform: rotate(270deg);
   }
   .image-scale {
     transform: scale(1.025);
   }
+
+  .opacity-98 {
+    opacity: 0.98;
+  }
 }
+

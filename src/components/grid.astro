@@ -1,36 +1,45 @@
-<div class="absolute p-16 top-0 right-0 flex flex-col md:flex-row gap-4 w-9/12">
-    <div class="flex-auto md:w-1/2">
-        <div class="flex flex-col gap-4">
-            <a href="content">
-            <div class="relative">
-                <div class="border-4 p-1 dark:border-zinc-500 border-zinc-300 rounded-lg transition-all duration-200">
-                    <img class="h-auto max-w-full bg-cover object-cover rounded-sm" src="/src/images/MetroBoomin.png" alt="">
-                </div>
-                <div class="absolute inset-1 rounded-sm dark:bg-black bg-white opacity-0 hover:opacity-95 dark:hover:opacity-85 transition duration-300">
-                    <div class="flex flex-col justify-center text-gray-700 dark:text-white p-4 items-center h-full">
-                        <h1 class="text-2xl font-bold dark:text-white text-center" transition:name="heading-animation">METRO BOOMIN: Website Development</h1>
-                        <p class="text-sm">April 2024</p>
-                    </div>
-                </div>
-            </div>
-            </a>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
-        </div>        
+---
+import { Image } from "astro:assets";
+import MBImage from "/src/assets/MetroBoomin.png";
+import MBLogo from "/src/assets/mb-logo.png";
+import ASAImage from "/src/assets/ASACover.png";
+import ASALogo from "/src/assets/ASA LOGO.png";
+---
+
+<div
+  class="font-neuemontreal absolute translate-x-64 h-4/5 top-16 left-16 flex flex-col md:flex-row gap-4 md:w-4/5 sm:w-full"
+>
+<div class="absolute bg-[radial-gradient(125%_125%_at_50%_10%,rgba(255,255,255,0.065),transparent_100%)] inset-0 -z-10  w-11/12 p-2 border border-zinc-600 rounded-3xl h-full">
+  <div class="flex flex-col w-full justify-center align-middle items-center">
+    <div class="h-[1px] w-full mt-[-18px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
+  </div>
+  <div class="bg-transparent h-full w-full border border-zinc-400 rounded-2xl">
+    <div class="flex flex-col w-full justify-center align-middle items-center">
+    <div class="h-[2px] w-4/6 mb-[-2px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
     </div>
-    
-    <div class="flex-auto md:w-1/2">
-        <div class="flex flex-col gap-4">
-            <a href="example.com">
-                <div class="relative">
-                    <div class="border-4 p-1 dark:border-zinc-500 border-zinc-300 rounded-lg transition-all duration-200">
-                        <img class="h-auto max-w-full bg-cover object-cover rounded-sm" src="/src/images/ASA.png" alt="">
-                    </div>
-                    <div class="absolute inset-1 rounded-sm dark:bg-black bg-white opacity-0 hover:opacity-95 dark:hover:opacity-75 transition duration-300">
-                        <div class="flex flex-col justify-center text-gray-700 dark:text-white p-4 items-center h-full">
-                            <h1 class="text-2xl font-bold dark:text-white text-center">AMERICAN SCHOOL OF ANTANANARIVO: Reworked Website</h1>
-                            <p class="text-sm">October 2023</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
+    <div class="w-full h-12 rounded-t-2xl bg-gradient-to-r from-gray-700/75 via-gray-400/75 to-gray-700/75">
+      <div class="ml-4 flex flex-row w-24 h-full items-center justify-evenly">
+        <div class="h-4 w-4 bg-red-500 rounded-full shadow-lg shadow-red-500"></div>
+        <div class="h-4 w-4 bg-yellow-500 rounded-full shadow-lg shadow-yellow-500"></div>
+        <div class="h-4 w-4 bg-green-500 rounded-full shadow-lg shadow-green-500"></div>
+      </div>
+    </div>
+    <div class="flex flex-col text-white">
+      <h1 class="translate-x-24 leading-[92px] text-shadow-blur shadow-white/40 translate-y-32 text-8xl font-medium">I design, weave,<br>& narrate <span class="font-serif italic">experiences.</span></h1>
+      <h2 class="translate-x-24 translate-y-[275%] text-3xl">Hi! I'm Riandre van der Voorden<br><span class="opacity-65">UI/UX Designer & Web Developer</span></h2>
+    </div>
+    <div class="z-20 text-xl absolute flex flex-row text-white w-16 h-16 items-center justify-between align-middle m-auto top-auto bottom-36 left-0 right-0">
+      <i class="iconify w-11 h-auto animate-bounce" data-icon="radix-icons:arrow-down"></i>
+    </div>
+  </div>
 </div>
+<div class="z-10 absolute flex flex-col h-1/3 w-full bg-gradient-to-b from-transparent via-zinc-950/95 to-zinc-950 bg-fixed items-center top-auto bottom-0 left-0 right-0"></div>
+</div>
+
+<div class="fixed justify-evenly items-center flex flex-col text-white w-14 h-40 right-28 top-24">
+  <svg class="hover:opacity-100 opacity-15 transition-all duration-200 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20"><path fill="currentColor" d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.65 13.979H5.706V7.723H7.65zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973m8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699z"/></svg>
+  <svg class="hover:opacity-100 opacity-15 transition-all duration-200 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="M420.3 470.3c8.7-6.3 12.9-16.7 12.9-31c.3-6.8-1.1-13.5-4.1-19.6c-2.7-4.9-6.7-9-11.6-11.9a44.8 44.8 0 0 0-16.6-6c-6.4-1.2-12.9-1.8-19.3-1.7h-70.3v79.7h76.1c13.1.1 24.2-3.1 32.9-9.5m11.8 72c-9.8-7.5-22.9-11.2-39.2-11.2h-81.8v94h80.2c7.5 0 14.4-.7 21.1-2.1a50.5 50.5 0 0 0 17.8-7.2c5.1-3.3 9.2-7.8 12.3-13.6c3-5.8 4.5-13.2 4.5-22.1c0-17.7-5-30.2-14.9-37.8M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64m86.5 286.9h138.4v33.7H598.5zM512 628.8a89.5 89.5 0 0 1-27 31c-11.8 8.2-24.9 14.2-38.8 17.7a167.4 167.4 0 0 1-44.6 5.7H236V342.1h161c16.3 0 31.1 1.5 44.6 4.3c13.4 2.8 24.8 7.6 34.4 14.1c9.5 6.5 17 15.2 22.3 26c5.2 10.7 7.9 24.1 7.9 40c0 17.2-3.9 31.4-11.7 42.9c-7.9 11.5-19.3 20.8-34.8 28.1c21.1 6 36.6 16.7 46.8 31.7c10.4 15.2 15.5 33.4 15.5 54.8c0 17.4-3.3 32.3-10 44.8M790.8 576H612.4c0 19.4 6.7 38 16.8 48c10.2 9.9 24.8 14.9 43.9 14.9c13.8 0 25.5-3.5 35.5-10.4c9.9-6.9 15.9-14.2 18.1-21.8h59.8c-9.6 29.7-24.2 50.9-44 63.7c-19.6 12.8-43.6 19.2-71.5 19.2c-19.5 0-37-3.2-52.7-9.3c-15.1-5.9-28.7-14.9-39.9-26.5a121.2 121.2 0 0 1-25.1-41.2c-6.1-16.9-9.1-34.7-8.9-52.6c0-18.5 3.1-35.7 9.1-51.7c11.5-31.1 35.4-56 65.9-68.9c16.3-6.8 33.8-10.2 51.5-10c21 0 39.2 4 55 12.2a111.6 111.6 0 0 1 38.6 32.8c10.1 13.7 17.2 29.3 21.7 46.9c4.3 17.3 5.8 35.5 4.6 54.7m-122-95.6c-10.8 0-19.9 1.9-26.9 5.6s-12.8 8.3-17.2 13.6a48.4 48.4 0 0 0-9.1 17.4c-1.6 5.3-2.7 10.7-3.1 16.2H723c-1.6-17.3-7.6-30.1-15.6-39.1c-8.4-8.9-21.9-13.7-38.6-13.7"/></svg>
+  <svg class="hover:opacity-100 opacity-15 transition-all duration-200 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" fill-rule="evenodd" d="M512 64C264.974 64 64 264.974 64 512c0 192.526 122.082 357.042 292.882 420.282c-4.919-43.857-4.147-115.682 3.97-150.457c7.602-32.666 49.11-208.167 49.11-208.167S397.43 548.563 397.43 511.5c0-58.244 33.744-101.7 75.767-101.7c35.742 0 52.977 26.834 52.977 58.984c0 35.951-22.857 89.652-34.696 139.422c-9.873 41.702 20.907 75.703 62.012 75.703c74.431 0 131.644-78.49 131.644-191.77c0-100.266-72.03-170.38-174.906-170.38c-119.144 0-189.081 89.377-189.081 181.752c0 35.983 13.852 74.575 31.167 95.579c3.414 4.155 3.914 7.78 2.9 12c-3.174 13.223-10.228 41.669-11.63 47.499c-1.82 7.683-6.073 9.278-13.998 5.589c-52.314-24.354-85.012-100.813-85.012-162.246c0-132.093 95.965-253.428 276.718-253.428c145.286 0 258.18 103.504 258.18 241.88c0 144.334-91.02 260.482-217.316 260.482c-42.441 0-82.323-22.05-95.965-48.096c0 0-21.003 79.956-26.11 99.558c-8.813 33.9-46.539 104.13-65.477 136.03A446.2 446.2 0 0 0 512 960c247.035 0 448-200.965 448-448c0-247.026-200.965-448-448-448"/></svg>
+</div>
+
+<div class="h-[5000px]"></div>
