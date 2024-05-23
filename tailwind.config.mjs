@@ -7,10 +7,6 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				freeman: ['Freeman'],
-				varuna: ['Varuna'],
-				ubuntu: ['Ubuntu'],
-				rubik: ['Rubik'],
 				neuemontreal: ['PP Neue Montreal'],
 			},
 			textShadow: {
